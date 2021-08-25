@@ -1,0 +1,35 @@
+GET http://127.0.0.1:4000/auth/login
+Content-Type: application/json
+
+{
+    "username":"atthasit",
+    "password":"filmshelby"
+}
+
+
+####
+
+
+POST http://127.0.0.1:4000/auth/login
+Content-Type: application/json
+
+{
+    "username":"6101121asdsasdasd",
+    "password":"filmshelbys"
+}
+###
+
+POST http://127.0.0.1:4000/auth/register 
+Content-Type: application/json
+
+{
+    "username":"610112",
+    "password":"filmshelbys",
+    "email":"atthasitasdslls@kmitl.ac.th",
+    "name":"film",
+    "surname":"lnw"
+}
+###
+
+GET http://127.0.0.1:4000/users/me HTTP/1.1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjkzNjUwMTcsImV4cCI6MTYyOTM2NTA3NywiYXVkIjoiNjExYjdiMDJlNDFlM2UzNWU0ZDFmZmI0In0.8_p-vCbCfwJji_OAzP9DzeEqHX0J7cZqWJbTHyASQUg
